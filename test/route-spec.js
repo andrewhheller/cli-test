@@ -11,7 +11,6 @@ describe('our app', () => {
         .expect(200)
         .then(response => {
           expect(response.text).to.contain('hello world')
-          expect(response.text).to.contain('Travis')
         })
     })
 
