@@ -10,7 +10,8 @@ describe('our app', () => {
       return app.get('/')
         .expect(200)
         .then(response => {
-          expect(response.text).to.equal('hello world')
+          expect(response.text).to.contain('hello world')
+          expect(response.text).to.contain('travis')
         })
     })
 
