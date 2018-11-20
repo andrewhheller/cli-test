@@ -13,7 +13,7 @@ describe('models', () => {
 
     it('there are three (3) users', () => {
       return User.findAll()
-        .then(users => expect(users.length).to.equal(2))
+        .then(users => expect(users.length).to.equal(3))
     })
 
   })
